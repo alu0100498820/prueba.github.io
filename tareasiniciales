@@ -1,0 +1,27 @@
+<h1 id="tutorial-tareas-iniciales-sistemas-y-tecnologias-web"><strong>TUTORIAL : TAREAS INICIALES (Sistemas y Tecnologias Web)</strong></h1>
+<h1 id="instalaciones">Instalaciones</h1>
+<h3 id="instalacion-de-node.js-en-linux"><em>- Instalacion de Node.JS (en linux)</em></h3>
+<p>Comenzaremos este tutorial con la instalacion de <strong><em>Node.js</em></strong>, para ello abrimos una terminal y escribimos lo siguiente:</p>
+<ol class="incremental" style="list-style-type: decimal">
+<li><p>Primero instalaremos el PPA con el fin de obtener acceso a su contenido, para ello ejecutamos: <strong><em>curl -sL https: // deb.nodesource.com/setup | sudo bash -</em></strong></p></li>
+<li><p>Después de ejecutar el script de configuración de nodesource, instalamos el paquete <strong><em>Node.js</em></strong> ejecutando: <strong><em>sudo apt-get install nodejs</em></strong></p></li>
+</ol>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen1.png" alt="imagen1" />
+<p class="caption">imagen1</p>
+</div>
+<ol class="incremental" start="3" style="list-style-type: decimal">
+<li>A continuación instalamos <strong><em>express</em></strong>, para ello ejecutamos: <strong><em>npm install express</em></strong> el cual nos generará el siguiente directorio dentro de <em>node_modules</em>.</li>
+</ol>
+<div class="figure">
+<img src="Imagenes/ImagenesCorrectas/imagen2.png" alt="imagen1" />
+<p class="caption">imagen1</p>
+</div>
+<p>Una vez tengamos todo esto instalado podemos pasar al siguiente punto (intalacion de git)</p>
+<h3 id="instalacion-de-git-en-linux"><em>- Instalacion de Git (en linux)</em></h3>
+<p>Para instalar <strong><em>Git</em></strong> tenemos que volver a abrir una terminal y ejecutar el comando: <strong><em>sudo apt-get install git</em></strong>.</p>
+<p>A continuación configuramos Git (nombre de usuario y dirección de correo), para ello ejecutamos:</p>
+<pre><code>1. $ git config --global user.name &quot;(nombre de usuario)&quot;
+2. $ git config --global user.email (dirección de email)</code></pre>
+<p>Una vez configurado el nombre y la dirección toca configurar la herramienta de diferencias por defecto, usada para resolver conflictos de unión (merge). Para ello ejecutamos</p>
+<pre><code>3. $ git config --global merge.tool vimdiff</code></pre>
